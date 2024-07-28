@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Industrial Private Limited</title>
+    
+    <!-- Favicon Links -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General styles for logo, sections, and forms */
+        .logo img {
+            width: 150px;
+            height: auto;
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        .review, .service-item {
+            margin-bottom: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+        }
+        input, textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        .nav-links li {
+            margin: 0 15px;
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+        .dot {
+            background-color: white;
+            width: 25px;
+            height: 3px;
+            margin: 5px 0;
+        }
+        
+        /* Mobile Styles */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                background-color: #333;
+                width: 200px;
+                border-radius: 5px;
+                padding: 10px;
+            }
+            .nav-links.show {
+                display: flex;
+            }
+            .menu-toggle {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="Syed Industrial Private Limited">
+                </div>
+                <div class="menu-toggle" id="menu-toggle">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <p>Syed Industrial Private Limited specializes in comprehensive government tender projects in Gem Portal, delivering expert services in lighting sales and installation, plumbing, firefighting systems, electrical solutions, tile and marble work, carpentry, and painting. With a proven track record of excellence, we ensure top-quality craftsmanship and reliable service for every project.</p>
+                <p>Contact us today to discover how we can meet your infrastructure needs efficiently and effectively.</p>
+                <div class="company-overview">
+                    <h3>Company Overview</h3>
+                    <p>Syed Industrial Private Limited has been a trusted name in the industry since [year of establishment]. We specialize in providing comprehensive solutions for government tender projects and industrial contracts. Our commitment to quality and customer satisfaction has earned us a reputation for excellence.</p>
+                    <p>Our mission is to deliver reliable and innovative services that meet the unique needs of our clients, ensuring efficient project execution and lasting partnerships.</p>
+                </div>
+                <div class="expertise">
+                    <h3>Expertise</h3>
+                    <p>With years of experience in the field, we have successfully executed numerous projects involving:</p>
+                    <ul>
+                        <li>Lighting sales and installation</li>
+                        <li>Plumbing services</li>
+                        <li>Firefighting systems</li>
+                        <li>Electrical solutions</li>
+                        <li>Tile and marble work</li>
+                        <li>Carpentry</li>
+                        <li>Painting services</li>
+                    </ul>
+                    <p>We pride ourselves on our ability to deliver high-quality workmanship, adhere to strict deadlines, and maintain stringent safety standards.</p>
+                </div>
+                <div class="team">
+                    <h3>Our Team</h3>
+                    <p>Meet the dedicated professionals who drive our success:</p>
+                    <ul>
+                        <li><strong>John Doe</strong> - Founder and CEO</li>
+                        <li><strong>Jane Smith</strong> - Chief Operations Officer</li>
+                        <li><strong>Michael Johnson</strong> - Project Manager</li>
+                        <!-- Add more team members as needed -->
+                    </ul>
+                    <p>Each member of our team brings valuable expertise and a commitment to excellence, ensuring seamless project execution and client satisfaction.</p>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container">
+                <h2>Our Services</h2>
+                <div class="service-item">
+                    <h3>Manufacturing & Production</h3>
+                    <p>We offer a range of manufacturing services tailored to meet the needs of various industries, including custom production runs and large-scale manufacturing.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Industrial Consultancy</h3>
+                    <p>Our expert consultancy services help businesses optimize their operations, improve efficiency, and achieve their strategic goals.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Technology Solutions</h3>
+                    <p>We develop cutting-edge technology solutions that drive innovation and improve business processes, from software development to advanced systems integration.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Maintenance & Support</h3>
+                    <p>Our comprehensive maintenance and support services ensure the longevity and optimal performance of your industrial systems and equipment.</p>
+                </div>
+            </div>
+        </section>
+        <section id="gallery">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery">
+                    <img src="images/work1.jpeg" alt="Lighting Installation">
+                    <h3>Lighting Sales and Installation</h3>
+                    <p>We offer a wide range of lighting solutions tailored to meet your specific needs. From sales of high-quality lighting products to expert installation services, we ensure efficient and effective lighting solutions for various applications.</p>
+                    <img src="depositphotos_29295307-stock-photo-young-plumber-fixing-a-sink.jpg" alt="Plumbing Work">
+                    <h3>Plumbing Services</h3>
+                    <p>Our plumbing services cover everything from routine maintenance to complex installations. We specialize in delivering reliable plumbing solutions that adhere to industry standards, ensuring optimal functionality and durability.</p>
+                    <img src="Fire-Fighting-A4-Brochure11.jpg" alt="Firefighting Systems">
+                    <h3>Firefighting Systems</h3>
+                    <p>We provide comprehensive firefighting system solutions, including installation, maintenance, and compliance services. Our expertise ensures that your facility is equipped with reliable firefighting systems to safeguard lives and property.</p>
+                    <img src="male-electrician-works-switchboard-electrical-260nw-2063093864.jpg" alt="Electrical Solutions">
+                    <h3>Electrical Solutions</h3>
+                    <p>Our electrical services encompass a wide range of solutions, from wiring and installations to maintenance and repairs. We prioritize safety and efficiency in every project, delivering dependable electrical systems tailored to your requirements.</p>
+                    <img src="istockphoto-534500443-612x612.jpg" alt="Tile and Marble Work">
+                    <h3>Tile and Marble Work</h3>
+                    <p>We specialize in tile and marble installations for both residential and commercial spaces. Whether you need new installations, repairs, or renovations, our skilled craftsmen ensure impeccable workmanship and lasting beauty.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Address: 123, Industrial Avenue, Mayur Vihar Phase I, Pocket 2, Cityville, Delhi, 110091</p>
+                <p>Email: <a href="mailto:contact@syedindustrial.com">contact@syedindustrial.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                <p>Fax: +123 456 7891</p>
+                <p>Google Business: <a href="https://www.google.com/search?si=ACC90nwILpEw5K72Be0DbfNdKXPkm-1SHe3LFlEXqi8VhLXHLcpLkXt9LDNvb003Azrnd2SKjD_b0mpl1BSDFXYzDIH8N7Y0nDy9fcijtWhnHEYPMzIIMz0Emky23tLbtqfutKxiFkmexOxv5TeTVMlfhya0cLMZLWh9ADUXYRlVpDtsaPLViQItjRtM8ZWRVKLgtIgpGbOk6Xeoqfm4XcFELoSGRmBR64MnsERpxw02PWkl65D7cSY%3D&hl=hi-IN&q=%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95+%E0%A4%95%E0%A5%80+%E0%A4%93%E0%A4%B0+%E0%A4%B8%E0%A5%87+%E0%A4%89%E0%A4%AA%E0%A4%B2%E0%A4%BE%E0%A4%AD+syed+industrial+private+limited+cityville&kgs=46ca8f4504f11943&shndl=30&shem=lsde,sbseo,vslcea&source=sh/x/loc/osrp/m5/4" target="_blank">View on Google</a></p>
+                <form id="contact-form">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+        <section id="reviews">
+            <div class="container">
+                <h2>Client Reviews</h2>
+                <div class="review">
+                    <h3>Jane Doe</h3>
+                    <p>"Syed Industrial did an excellent job with our lighting installation project. The team was professional, on time, and exceeded our expectations."</p>
+                </div>
+                <div class="review">
+                    <h3>John Smith</h3>
+                    <p>"We had a great experience with their plumbing services. The work was completed efficiently and the quality was outstanding."</p>
+                </div>
+                <div class="review">
+                    <h3>Emily Johnson</h3>
+                    <p>"Their firefighting system installation was top-notch. We appreciate their attention to detail and the thoroughness of their work."</p>
+                </div>
+                <!-- Add more reviews as needed -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="footer-social-media">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                    <img src="path/to/facebook-icon.png" alt="Facebook">
+                </a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon">
+                    <img src="path/to/twitter-icon.png" alt="Twitter">
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                    <img src="path/to/instagram-icon.png" alt="Instagram">
+                </a>
+                <!-- Add more social media links as needed -->
+            </div>
+            
+            <div class="footer-quick-links">
+                <h2>Quick Links</h2>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#contact">Contact Us</a>
+            </div>
+            <div class="footer-contact">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="Syed Industrial Private Limited">
+                </div>
+                <h2>Contact Us</h2>
+                <p>Address: 123, Industrial Avenue,<br> Mayur Vihar Phase I, Pocket 2, Cityville, Delhi, 110091</p>
+                <p>Email: <a href="mailto:contact@syedindustrial.com">contact@syedindustrial.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+                <p>Fax: +123 456 7891</p>
+                
+                <!-- Google Maps Embed -->
+                <div class="google-maps">
+                    <h2>Find Us Here</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3434!2d77.0999!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff3e9b2d1b3%3A0x8589f1dddbd7c10c!2sYour+Office+Name!5e0!3m2!1sen!2sin!4v1642671919341!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2024 Syed Industrial Private Limited. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
