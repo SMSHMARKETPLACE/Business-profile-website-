@@ -1,0 +1,262 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+header .logo img {
+    width: 150px;
+    height: auto;
+}
+
+header p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+}
+
+/* Navigation */
+nav {
+    background-color: #343a40;
+    color: #fff;
+}
+
+nav .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #495057;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+/* Main Content */
+main {
+    padding: 20px 0;
+    background-color: #ffffff;
+}
+
+section {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+.company-overview, .expertise, .team, .service-item, .review {
+    margin-bottom: 30px;
+}
+
+.company-overview h3, .expertise h3, .team h3, .service-item h3, .review h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.gallery h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.gallery p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-social-media {
+    margin-bottom: 20px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+    opacity: 0.8;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.footer-quick-links {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-quick-links h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.footer-quick-links a {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.footer-quick-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-contact {
+    flex: 1;
+    margin: 20px;
+}
+
+.footer-contact h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #007bff;
+}
+
+.google-maps {
+    margin-top: 20px;
+}
+
+.google-maps iframe {
+    width: 100%;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo, .footer-quick-links, .footer-contact {
+        text-align: center;
+        margin: 10px 0;
+    }
+}
