@@ -1,306 +1,851 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Industrial Private Limited</title>
-    
-    <!-- Favicon Links -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" href="/favicon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        /* General styles for logo, sections, and forms */
-        .logo img {
-            width: 150px;
-            height: auto;
-        }
-        section {
-            padding: 20px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .review, .service-item {
-            margin-bottom: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            height: auto;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-        }
-        label {
-            margin-top: 10px;
-        }
-        input, textarea {
-            margin-bottom: 10px;
-            padding: 10px;
-            font-size: 16px;
-        }
-        button {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        
-        /* Navigation styles */
-        nav {
-            background-color: #333;
-            color: white;
-            padding: 10px 0;
-        }
-        .nav-links {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-        }
-        .nav-links li {
-            margin: 0 15px;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        .menu-toggle {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-        .dot {
-            background-color: white;
-            width: 25px;
-            height: 3px;
-            margin: 5px 0;
-        }
-        
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                background-color: #333;
-                width: 200px;
-                border-radius: 5px;
-                padding: 10px;
-            }
-            .nav-links.show {
-                display: flex;
-            }
-            .menu-toggle {
-                display: flex;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SMSH MARKETPLACE | GeM Seller | LED Lighting & Electrical Products</title>
+
+<meta name="description" content="SMSH MARKETPLACE - Trusted GeM Seller, LED Lighting, Electrical Products, Industrial Supply, Government Tender Supplier.">
+
+<meta name="keywords" content="LED Lights, Electrical Products, GeM Seller, Government Supplier, Delhi">
+
+<link rel="icon" href="logo.png">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f7fa;
+color:#222;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0d47a1;
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#fff;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+}
+
+nav ul li{
+margin-left:25px;
+}
+
+nav ul li a{
+color:#fff;
+text-decoration:none;
+font-weight:500;
+transition:.3s;
+}
+
+nav ul li a:hover{
+color:#ffd54f;
+}
+
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+background:linear-gradient(rgba(13,71,161,.8),rgba(13,71,161,.8)),
+url('banner.jpg') center/cover;
+color:#fff;
+}
+
+.hero-content h1{
+font-size:55px;
+margin-bottom:15px;
+}
+
+.hero-content h2{
+font-size:28px;
+margin-bottom:20px;
+font-weight:400;
+}
+
+.hero-content p{
+max-width:700px;
+margin:auto;
+font-size:18px;
+line-height:1.7;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 35px;
+background:#ff9800;
+color:#fff;
+text-decoration:none;
+border-radius:30px;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#ff6f00;
+transform:translateY(-3px);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:36px;
+margin-bottom:40px;
+color:#0d47a1;
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about-box{
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+}
+
+.about-box ul{
+margin-top:20px;
+}
+
+.about-box li{
+margin-bottom:12px;
+}
+
+@media(max-width:768px){
+
+header{
+padding:15px;
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+margin-top:10px;
+}
+
+.hero-content h1{
+font-size:34px;
+}
+
+.hero-content h2{
+font-size:22px;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <div class="logo">
-                    <img src="logo.png" alt="Syed Industrial Private Limited">
-                </div>
-                <div class="menu-toggle" id="menu-toggle">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-                <ul class="nav-links" id="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <main>
-        <section id="about">
-            <div class="container">
-                <h2>About Us</h2>
-                <p>Syed Industrial Private Limited specializes in comprehensive government tender projects in Gem Portal, delivering expert services in lighting sales and installation, plumbing, firefighting systems, electrical solutions, tile and marble work, carpentry, and painting. With a proven track record of excellence, we ensure top-quality craftsmanship and reliable service for every project.</p>
-                <p>Contact us today to discover how we can meet your infrastructure needs efficiently and effectively.</p>
-                <div class="company-overview">
-                    <h3>Company Overview</h3>
-                    <p>Syed Industrial Private Limited has been a trusted name in the industry since [year of establishment]. We specialize in providing comprehensive solutions for government tender projects and industrial contracts. Our commitment to quality and customer satisfaction has earned us a reputation for excellence.</p>
-                    <p>Our mission is to deliver reliable and innovative services that meet the unique needs of our clients, ensuring efficient project execution and lasting partnerships.</p>
-                </div>
-                <div class="expertise">
-                    <h3>Expertise</h3>
-                    <p>With years of experience in the field, we have successfully executed numerous projects involving:</p>
-                    <ul>
-                        <li>Lighting sales and installation</li>
-                        <li>Plumbing services</li>
-                        <li>Firefighting systems</li>
-                        <li>Electrical solutions</li>
-                        <li>Tile and marble work</li>
-                        <li>Carpentry</li>
-                        <li>Painting services</li>
-                    </ul>
-                    <p>We pride ourselves on our ability to deliver high-quality workmanship, adhere to strict deadlines, and maintain stringent safety standards.</p>
-                </div>
-                <div class="team">
-                    <h3>Our Team</h3>
-                    <p>Meet the dedicated professionals who drive our success:</p>
-                    <ul>
-                        <li><strong>John Doe</strong> - Founder and CEO</li>
-                        <li><strong>Jane Smith</strong> - Chief Operations Officer</li>
-                        <li><strong>Michael Johnson</strong> - Project Manager</li>
-                        <!-- Add more team members as needed -->
-                    </ul>
-                    <p>Each member of our team brings valuable expertise and a commitment to excellence, ensuring seamless project execution and client satisfaction.</p>
-                </div>
-            </div>
-        </section>
-        <section id="services">
-            <div class="container">
-                <h2>Our Services</h2>
-                <div class="service-item">
-                    <h3>Manufacturing & Production</h3>
-                    <p>We offer a range of manufacturing services tailored to meet the needs of various industries, including custom production runs and large-scale manufacturing.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Industrial Consultancy</h3>
-                    <p>Our expert consultancy services help businesses optimize their operations, improve efficiency, and achieve their strategic goals.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Technology Solutions</h3>
-                    <p>We develop cutting-edge technology solutions that drive innovation and improve business processes, from software development to advanced systems integration.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Maintenance & Support</h3>
-                    <p>Our comprehensive maintenance and support services ensure the longevity and optimal performance of your industrial systems and equipment.</p>
-                </div>
-            </div>
-        </section>
-        <section id="gallery">
-            <div class="container">
-                <h2>Gallery</h2>
-                <div class="gallery">
-                    <img src="images/work1.jpg" alt="Lighting Installation">
-                    <h3>Lighting Sales and Installation</h3>
-                    <p>We offer a wide range of lighting solutions tailored to meet your specific needs. From sales of high-quality lighting products to expert installation services, we ensure efficient and effective lighting solutions for various applications.</p>
-                    <img src="depositphotos_29295307-stock-photo-young-plumber-fixing-a-sink.jpg" alt="Plumbing Work">
-                    <h3>Plumbing Services</h3>
-                    <p>Our plumbing services cover everything from routine maintenance to complex installations. We specialize in delivering reliable plumbing solutions that adhere to industry standards, ensuring optimal functionality and durability.</p>
-                    <img src="Fire-Fighting-A4-Brochure11.jpg" alt="Firefighting Systems">
-                    <h3>Firefighting Systems</h3>
-                    <p>We provide comprehensive firefighting system solutions, including installation, maintenance, and compliance services. Our expertise ensures that your facility is equipped with reliable firefighting systems to safeguard lives and property.</p>
-                    <img src="male-electrician-works-switchboard-electrical-260nw-2063093864.jpg" alt="Electrical Solutions">
-                    <h3>Electrical Solutions</h3>
-                    <p>Our electrical services encompass a wide range of solutions, from wiring and installations to maintenance and repairs. We prioritize safety and efficiency in every project, delivering dependable electrical systems tailored to your requirements.</p>
-                    <img src="istockphoto-534500443-612x612.jpg" alt="Tile and Marble Work">
-                    <h3>Tile and Marble Work</h3>
-                    <p>We specialize in tile and marble installations for both residential and commercial spaces. Whether you need new installations, repairs, or renovations, our skilled craftsmen ensure impeccable workmanship and lasting beauty.</p>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <div class="container">
-                <h2>Contact Us</h2>
-                <p>Address: 123, Industrial Avenue, Mayur Vihar Phase I, Pocket 2, Cityville, Delhi, 110091</p>
-                <p>Email: <a href="mailto:contact@syedindustrial.com">contact@syedindustrial.com</a></p>
-                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-                <p>Fax: +123 456 7891</p>
-                <p>Google Business: <a href="https://www.google.com/search?si=ACC90nwILpEw5K72Be0DbfNdKXPkm-1SHe3LFlEXqi8VhLXHLcpLkXt9LDNvb003Azrnd2SKjD_b0mpl1BSDFXYzDIH8N7Y0nDy9fcijtWhnHEYPMzIIMz0Emky23tLbtqfutKxiFkmexOxv5TeTVMlfhya0cLMZLWh9ADUXYRlVpDtsaPLViQItjRtM8ZWRVKLgtIgpGbOk6Xeoqfm4XcFELoSGRmBR64MnsERpxw02PWkl65D7cSY%3D&hl=hi-IN&q=%E0%A4%AE%E0%A4%BE%E0%A4%B2%E0%A4%BF%E0%A4%95+%E0%A4%95%E0%A5%80+%E0%A4%93%E0%A4%B0+%E0%A4%B8%E0%A5%87+%E0%A4%89%E0%A4%AA%E0%A4%B2%E0%A4%BE%E0%A4%AD+syed+industrial+private+limited+cityville&kgs=46ca8f4504f11943&shndl=30&shem=lsde,sbseo,vslcea&source=sh/x/loc/osrp/m5/4" target="_blank">View on Google</a></p>
-                <form id="contact-form">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                    
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                    
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
-                    
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-        </section>
-        <section id="reviews">
-            <div class="container">
-                <h2>Client Reviews</h2>
-                <div class="review">
-                    <h3>Jane Doe</h3>
-                    <p>"Syed Industrial did an excellent job with our lighting installation project. The team was professional, on time, and exceeded our expectations."</p>
-                </div>
-                <div class="review">
-                    <h3>John Smith</h3>
-                    <p>"We had a great experience with their plumbing services. The work was completed efficiently and the quality was outstanding."</p>
-                </div>
-                <div class="review">
-                    <h3>Emily Johnson</h3>
-                    <p>"Their firefighting system installation was top-notch. We appreciate their attention to detail and the thoroughness of their work."</p>
-                </div>
-                <!-- Add more reviews as needed -->
-            </div>
-        </section>
-    </main>
-    
-    <footer>
-        <div class="footer-container">
-            <div class="footer-social-media">
-                <a href="https://www.facebook.com" target="_blank" class="social-icon">
-                    <img src="path/to/facebook-icon.png" alt="Facebook">
-                </a>
-                <a href="https://www.twitter.com" target="_blank" class="social-icon">
-                    <img src="path/to/twitter-icon.png" alt="Twitter">
-                </a>
-                <a href="https://www.instagram.com" target="_blank" class="social-icon">
-                    <img src="path/to/instagram-icon.png" alt="Instagram">
-                </a>
-                <!-- Add more social media links as needed -->
-            </div>
-            
-            <div class="footer-quick-links">
-                <h2>Quick Links</h2>
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#services">Services</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#contact">Contact Us</a>
-            </div>
-            <div class="footer-contact">
-                <div class="footer-logo">
-                    <img src="logo.png" alt="Syed Industrial Private Limited">
-                </div>
-                <h2>Contact Us</h2>
-                <p>Address: 123, Industrial Avenue,<br> Mayur Vihar Phase I, Pocket 2, Cityville, Delhi, 110091</p>
-                <p>Email: <a href="mailto:contact@syedindustrial.com">contact@syedindustrial.com</a></p>
-                <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-                <p>Fax: +123 456 7891</p>
-                
-                <!-- Google Maps Embed -->
-                <div class="google-maps">
-                    <h2>Find Us Here</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3434!2d77.0999!3d28.6139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceff3e9b2d1b3%3A0x8589f1dddbd7c10c!2sYour+Office+Name!5e0!3m2!1sen!2sin!4v1642671919341!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p>&copy; 2024 Syed Industrial Private Limited. All rights reserved.</p>
-    </footer>
+<header>
 
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function() {
-            document.getElementById('nav-links').classList.toggle('show');
-        });
-    </script>
+<div class="logo">
+SMSH MARKETPLACE
+</div>
+
+<nav>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#products">Products</a></li>
+
+<li><a href="#services">Services</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>SMSH MARKETPLACE</h1>
+
+<h2>Trusted GeM Seller & Electrical Products Supplier</h2>
+
+<p>
+
+We supply premium quality LED Lighting, Electrical Products,
+Industrial Equipment and Government Procurement Solutions
+across India with quality assurance and competitive pricing.
+
+</p>
+
+<a href="#contact" class="btn">Contact Now</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about-grid">
+
+<div class="about-box">
+
+<h3>Welcome to SMSH MARKETPLACE</h3>
+
+<p>
+
+SMSH MARKETPLACE is a trusted Proprietorship business based in
+Patparganj, East Delhi. We specialize in LED Lighting,
+Electrical Products, Industrial Supplies, Government Procurement
+and GeM Portal supply across India.
+
+</p>
+
+</div>
+
+<div class="about-box">
+
+<h3>Business Information</h3>
+
+<ul>
+
+<li><b>Proprietor :</b> Md Shahid</li>
+
+<li><b>Business :</b> Proprietorship</li>
+
+<li><b>GSTIN :</b> 07OKLPS2460H1ZJ</li>
+
+<li><b>UDYAM :</b> UDYAM-DL-02-0092630</li>
+
+<li><b>GeM Seller ID :</b> 3XN1250013172389</li>
+
+<li><b>Email :</b> smshmarketplace@gmail.com</li>
+
+<li><b>Website :</b> smshmarketplace.in</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+<!-- PRODUCTS SECTION -->
+
+<section id="products">
+
+<h2 class="section-title">Our Products</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/led-bulb.jpg" alt="LED Bulbs">
+<h3>LED Bulbs</h3>
+<p>Energy-efficient LED bulbs for homes, offices and industries.</p>
+</div>
+
+<div class="card">
+<img src="images/flood-light.jpg" alt="Flood Lights">
+<h3>Flood Lights</h3>
+<p>High-performance LED flood lights for outdoor applications.</p>
+</div>
+
+<div class="card">
+<img src="images/street-light.jpg" alt="Street Lights">
+<h3>Street Lights</h3>
+<p>Durable street lighting solutions for roads and public spaces.</p>
+</div>
+
+<div class="card">
+<img src="images/panel-light.jpg" alt="Panel Lights">
+<h3>Panel Lights</h3>
+<p>Modern LED panel lights for offices and commercial buildings.</p>
+</div>
+
+<div class="card">
+<img src="images/wire.jpg" alt="Electrical Wires">
+<h3>Electrical Wires</h3>
+<p>Premium quality wires and cables with high safety standards.</p>
+</div>
+
+<div class="card">
+<img src="images/switch.jpg" alt="Switches">
+<h3>Switches & Accessories</h3>
+<p>Modular switches, sockets, MCBs and electrical accessories.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVICES -->
+
+<section id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>GeM Portal Supply</h3>
+<p>Registered GeM Seller supplying products to Government Departments.</p>
+</div>
+
+<div class="card">
+<h3>Government Tender Supply</h3>
+<p>Reliable supply for Government projects and institutional requirements.</p>
+</div>
+
+<div class="card">
+<h3>Electrical Products Supply</h3>
+<p>Complete electrical solutions for residential, commercial and industrial projects.</p>
+</div>
+
+<div class="card">
+<h3>LED Lighting Solutions</h3>
+<p>Indoor, outdoor and decorative LED lighting products.</p>
+</div>
+
+<div class="card">
+<h3>Industrial Supply</h3>
+<p>Industrial electrical items and equipment with quality assurance.</p>
+</div>
+
+<div class="card">
+<h3>Customer Support</h3>
+<p>Dedicated customer assistance before and after every purchase.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section id="why">
+
+<h2 class="section-title">Why Choose SMSH MARKETPLACE?</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>✔ Genuine Products</h3>
+<p>100% original and quality-tested products.</p>
+</div>
+
+<div class="card">
+<h3>✔ Best Pricing</h3>
+<p>Competitive wholesale and retail prices.</p>
+</div>
+
+<div class="card">
+<h3>✔ Fast Delivery</h3>
+<p>Quick dispatch and reliable delivery across India.</p>
+</div>
+
+<div class="card">
+<h3>✔ GST Billing</h3>
+<p>Proper GST invoice with every eligible purchase.</p>
+</div>
+
+<div class="card">
+<h3>✔ Trusted GeM Seller</h3>
+<p>Experienced supplier for Government procurement.</p>
+</div>
+
+<div class="card">
+<h3>✔ Customer Satisfaction</h3>
+<p>Our priority is long-term customer relationships.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- STATS -->
+
+<section>
+
+<h2 class="section-title">Business Highlights</h2>
+
+<div class="cards">
+
+<div class="card">
+<h2>100+</h2>
+<p>Products</p>
+</div>
+
+<div class="card">
+<h2>500+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="card">
+<h2>24×7</h2>
+<p>Customer Support</p>
+</div>
+
+<div class="card">
+<h2>India</h2>
+<p>Nationwide Supply</p>
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+.card{
+background:#fff;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.card h3{
+margin-bottom:10px;
+color:#0d47a1;
+}
+
+.card p{
+line-height:1.7;
+}
+
+</style>
+<!-- ================= GALLERY ================= -->
+
+<section id="gallery">
+
+<h2 class="section-title">Gallery</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/gallery1.jpg" alt="LED Lighting">
+<h3>LED Lighting</h3>
+</div>
+
+<div class="card">
+<img src="images/gallery2.jpg" alt="Electrical Products">
+<h3>Electrical Products</h3>
+</div>
+
+<div class="card">
+<img src="images/gallery3.jpg" alt="Industrial Supply">
+<h3>Industrial Supply</h3>
+</div>
+
+<div class="card">
+<img src="images/gallery4.jpg" alt="Government Supply">
+<h3>Government Supply</h3>
+</div>
+
+<div class="card">
+<img src="images/gallery5.jpg" alt="GeM Supply">
+<h3>GeM Supply</h3>
+</div>
+
+<div class="card">
+<img src="images/gallery6.jpg" alt="Projects">
+<h3>Our Projects</h3>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= REVIEWS ================= -->
+
+<section id="reviews">
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="cards">
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Rahul Sharma</h3>
+<p>Excellent quality products and timely delivery.</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Amit Kumar</h3>
+<p>Very professional service and genuine electrical products.</p>
+</div>
+
+<div class="card">
+⭐⭐⭐⭐⭐
+<h3>Priya Gupta</h3>
+<p>Highly recommended for GeM and government supply.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact">
+
+<h2 class="section-title">Contact Us</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>SMSH MARKETPLACE</h3>
+
+<p><b>Proprietor:</b> Md Shahid</p>
+
+<p><b>📍 Address</b><br>
+A-476, Jawahar Mohalla,<br>
+Patparganj,<br>
+East Delhi – 110091</p>
+
+<p><b>📞 Mobile</b><br>
+7217612989</p>
+
+<p><b>💬 WhatsApp</b><br>
+9599041773</p>
+
+<p><b>📧 Email</b><br>
+smshmarketplace@gmail.com</p>
+
+<p><b>🌐 Website</b><br>
+www.smshmarketplace.in</p>
+
+</div>
+
+<div class="card">
+
+<form>
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="email" placeholder="Your Email" required>
+
+<input type="tel" placeholder="Mobile Number">
+
+<textarea rows="6" placeholder="Your Message"></textarea>
+
+<button class="btn" type="submit">Send Message</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<style>
+
+form input,
+form textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+font-size:16px;
+}
+
+form textarea{
+resize:none;
+}
+
+form button{
+border:none;
+cursor:pointer;
+}
+
+</style>
+
+<!-- ================= GOOGLE MAP ================= -->
+
+<section id="location">
+
+<h2 class="section-title">Our Location</h2>
+
+<div style="width:100%;height:450px;overflow:hidden;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.15);">
+
+<iframe
+src="https://maps.google.com/maps?q=Patparganj%20Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%"
+height="450"
+style="border:0;"
+loading="lazy"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer style="background:#0d47a1;color:#fff;padding:50px 8%;text-align:center;">
+
+<h2>SMSH MARKETPLACE</h2>
+
+<p>
+Trusted GeM Seller | LED Lighting | Electrical Products
+</p>
+
+<br>
+
+<p>
+
+📍 A-476, Jawahar Mohalla,
+Patparganj,
+East Delhi – 110091
+
+</p>
+
+<p>
+
+📞 7217612989 |
+💬 9599041773
+
+</p>
+
+<p>
+
+📧 smshmarketplace@gmail.com
+
+</p>
+
+<p>
+
+🌐 www.smshmarketplace.in
+
+</p>
+
+<br>
+
+<p>
+
+GSTIN : 07OKLPS2460H1ZJ
+
+</p>
+
+<p>
+
+GeM Seller ID :
+3XN1250013172389
+
+</p>
+
+<p>
+
+UDYAM :
+UDYAM-DL-02-0092630
+
+</p>
+
+<hr style="margin:30px 0;">
+
+<p>
+
+© 2026 SMSH MARKETPLACE
+All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<a href="https://wa.me/919599041773"
+class="whatsapp"
+target="_blank">
+
+💬
+
+</a>
+
+<a href="tel:7217612989"
+class="call">
+
+📞
+
+</a>
+
+<button onclick="topFunction()"
+id="topBtn">
+
+⬆
+
+</button>
+
+<style>
+
+.whatsapp{
+
+position:fixed;
+bottom:20px;
+right:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:999;
+}
+
+.call{
+
+position:fixed;
+bottom:90px;
+right:20px;
+width:60px;
+height:60px;
+background:#0d47a1;
+color:#fff;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:28px;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+z-index:999;
+}
+
+#topBtn{
+
+display:none;
+position:fixed;
+bottom:160px;
+right:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#ff9800;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+}
+
+</style>
+
+<script>
+
+window.onscroll=function(){
+
+scrollFunction();
+
+};
+
+function scrollFunction(){
+
+if(document.body.scrollTop>300||
+
+document.documentElement.scrollTop>300){
+
+document.getElementById("topBtn").style.display="block";
+
+}else{
+
+document.getElementById("topBtn").style.display="none";
+
+}
+
+}
+
+function topFunction(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
 </body>
-    </html>
-            
+
+</html>
