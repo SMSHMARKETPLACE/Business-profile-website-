@@ -1,177 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SMSH MARKETPLACE | GeM Seller | LED Lighting & Electrical Products</title>
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
 
-<meta name="description" content="SMSH MARKETPLACE - Trusted GeM Seller, LED Lighting, Electrical Products, Industrial Supply, Government Tender Supplier.">
+<title>SMSH MARKETPLACE | Trusted GeM Vendor</title>
 
-<meta name="keywords" content="LED Lights, Electrical Products, GeM Seller, Government Supplier, Delhi">
+<meta name="description"
+content="SMSH MARKETPLACE | LED Lighting | Electrical Products | GeM Registered Vendor">
 
-<link rel="icon" href="logo.png">
+<meta name="keywords"
+content="LED Lights, GeM Vendor, Electrical Products, Government Supplier">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon"
+href="logo.png">
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 <style>
 
 *{
+
 margin:0;
+
 padding:0;
+
 box-sizing:border-box;
-font-family:'Poppins',sans-serif;
+
+font-family:'Inter',sans-serif;
+
 scroll-behavior:smooth;
+
 }
 
 body{
-background:#f5f7fa;
-color:#222;
+
+background:#0c1220;
+
+color:#fff;
+
+overflow-x:hidden;
+
 }
 
+a{
+
+text-decoration:none;
+
+}
+
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+
+.container{
+
+width:90%;
+
+max-width:1300px;
+
+margin:auto;
+
+}
+
+/* HEADER */
+
 header{
+
 position:fixed;
+
 top:0;
+
 left:0;
+
 width:100%;
-background:#0d47a1;
-padding:15px 8%;
+
+background:#09111f;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+z-index:999;
+
+}
+
+.topbar{
+
+background:#08101d;
+
+padding:8px 0;
+
+font-size:13px;
+
+color:#bfc7d5;
+
+text-align:center;
+
+}
+
+.navbar{
+
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
-z-index:1000;
-box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+padding:18px 0;
+
 }
 
 .logo{
-font-size:28px;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+}
+
+.logo img{
+
+width:52px;
+
+}
+
+.logo h2{
+
+font-size:24px;
+
 font-weight:700;
+
 color:#fff;
+
 }
 
 nav ul{
-display:flex;
-list-style:none;
-}
 
-nav ul li{
-margin-left:25px;
+display:flex;
+
+list-style:none;
+
+gap:35px;
+
 }
 
 nav ul li a{
+
 color:#fff;
-text-decoration:none;
+
 font-weight:500;
+
 transition:.3s;
+
 }
 
 nav ul li a:hover{
-color:#ffd54f;
+
+color:#ffb000;
+
 }
 
-.hero{
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:20px;
-background:linear-gradient(rgba(13,71,161,.8),rgba(13,71,161,.8)),
-url('banner.jpg') center/cover;
-color:#fff;
-}
+.quote-btn{
 
-.hero-content h1{
-font-size:55px;
-margin-bottom:15px;
-}
+background:#ffb000;
 
-.hero-content h2{
-font-size:28px;
-margin-bottom:20px;
-font-weight:400;
-}
+color:#111;
 
-.hero-content p{
-max-width:700px;
-margin:auto;
-font-size:18px;
-line-height:1.7;
-}
+padding:12px 22px;
 
-.btn{
-display:inline-block;
-margin-top:30px;
-padding:14px 35px;
-background:#ff9800;
-color:#fff;
-text-decoration:none;
-border-radius:30px;
-font-weight:600;
+border-radius:8px;
+
+font-weight:700;
+
 transition:.3s;
+
 }
 
-.btn:hover{
-background:#ff6f00;
-transform:translateY(-3px);
+.quote-btn:hover{
+
+background:#ffc933;
+
 }
 
-section{
-padding:90px 8%;
+.menu{
+
+display:none;
+
+font-size:28px;
+
+cursor:pointer;
+
 }
 
-.section-title{
-text-align:center;
-font-size:36px;
-margin-bottom:40px;
-color:#0d47a1;
+/* MOBILE */
+
+@media(max-width:900px){
+
+nav{
+
+display:none;
+
 }
 
-.about-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:40px;
-align-items:center;
+.menu{
+
+display:block;
+
 }
 
-.about-box{
-background:#fff;
-padding:30px;
-border-radius:12px;
-box-shadow:0 10px 20px rgba(0,0,0,.08);
-}
+.logo h2{
 
-.about-box ul{
-margin-top:20px;
-}
+font-size:20px;
 
-.about-box li{
-margin-bottom:12px;
-}
-
-@media(max-width:768px){
-
-header{
-padding:15px;
-flex-direction:column;
-}
-
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
-margin-top:10px;
-}
-
-.hero-content h1{
-font-size:34px;
-}
-
-.hero-content h2{
-font-size:22px;
-}
-
-.about-grid{
-grid-template-columns:1fr;
 }
 
 }
@@ -184,8 +244,30 @@ grid-template-columns:1fr;
 
 <header>
 
+<div class="topbar">
+
+📞 +91 7217612989 |
+📱 +91 9599041773 |
+✉ smshmarketplace@gmail.com
+
+</div>
+
+<div class="container navbar">
+
 <div class="logo">
-SMSH MARKETPLACE
+
+<img src="logo.png">
+
+<div>
+
+<h2>SMSH MARKETPLACE</h2>
+
+<small style="color:#bfc7d5;">
+Trusted GeM Vendor
+</small>
+
+</div>
+
 </div>
 
 <nav>
@@ -194,9 +276,9 @@ SMSH MARKETPLACE
 
 <li><a href="#home">Home</a></li>
 
-<li><a href="#about">About</a></li>
+<li><a href="#catalog">Catalog</a></li>
 
-<li><a href="#products">Products</a></li>
+<li><a href="#about">About</a></li>
 
 <li><a href="#services">Services</a></li>
 
@@ -206,399 +288,1889 @@ SMSH MARKETPLACE
 
 </nav>
 
+<a href="#contact"
+class="quote-btn">
+
+Request Quote
+
+</a>
+
+<div class="menu">
+
+<i class="fa-solid fa-bars"></i>
+
+</div>
+
+</div>
+
 </header>
 
-<section class="hero" id="home">
+<!-- ================= HERO SECTION ================= -->
+
+<section id="home" class="hero">
+
+<div class="container hero-grid">
 
 <div class="hero-content">
 
-<h1>SMSH MARKETPLACE</h1>
+<span class="badge">
 
-<h2>Trusted GeM Seller & Electrical Products Supplier</h2>
+⭐ REGISTERED GeM VENDOR
 
-<p>
+</span>
 
-We supply premium quality LED Lighting, Electrical Products,
-Industrial Equipment and Government Procurement Solutions
-across India with quality assurance and competitive pricing.
+<h1>
 
-</p>
+Lighting, Electrical & Wires —
+<br>
 
-<a href="#contact" class="btn">Contact Now</a>
+supplied at scale.
 
-</div>
-
-</section>
-
-<section id="about">
-
-<h2 class="section-title">About Us</h2>
-
-<div class="about-grid">
-
-<div class="about-box">
-
-<h3>Welcome to SMSH MARKETPLACE</h3>
+</h1>
 
 <p>
 
-SMSH MARKETPLACE is a trusted Proprietorship business based in
-Patparganj, East Delhi. We specialize in LED Lighting,
-Electrical Products, Industrial Supplies, Government Procurement
-and GeM Portal supply across India.
+SMSH MARKETPLACE is an authorized supplier of India's
+trusted electrical brands. We supply LED Lighting,
+Electrical Wires, Switches, Panel Lights, Flood Lights,
+Street Lights and Industrial Electrical Products for
+Government Departments, Institutions and Private Projects.
 
 </p>
 
-</div>
+<div class="hero-buttons">
 
-<div class="about-box">
+<a href="#catalog" class="primary-btn">
 
-<h3>Business Information</h3>
+Browse Catalog
 
-<ul>
+<i class="fa-solid fa-arrow-right"></i>
 
-<li><b>Proprietor :</b> Md Shahid</li>
+</a>
 
-<li><b>Business :</b> Proprietorship</li>
+<a href="#contact" class="secondary-btn">
 
-<li><b>GSTIN :</b> 07OKLPS2460H1ZJ</li>
+Request a Quote
 
-<li><b>UDYAM :</b> UDYAM-DL-02-0092630</li>
-
-<li><b>GeM Seller ID :</b> 3XN1250013172389</li>
-
-<li><b>Email :</b> smshmarketplace@gmail.com</li>
-
-<li><b>Website :</b> smshmarketplace.in</li>
-
-</ul>
+</a>
 
 </div>
 
 </div>
 
-</section>
-<!-- PRODUCTS SECTION -->
+<div class="hero-image">
 
-<section id="products">
+<img src="images/hero-light.png"
+alt="LED Lighting">
 
-<h2 class="section-title">Our Products</h2>
-
-<div class="cards">
-
-<div class="card">
-<img src="images/led-bulb.jpg" alt="LED Bulbs">
-<h3>LED Bulbs</h3>
-<p>Energy-efficient LED bulbs for homes, offices and industries.</p>
-</div>
-
-<div class="card">
-<img src="images/flood-light.jpg" alt="Flood Lights">
-<h3>Flood Lights</h3>
-<p>High-performance LED flood lights for outdoor applications.</p>
-</div>
-
-<div class="card">
-<img src="images/street-light.jpg" alt="Street Lights">
-<h3>Street Lights</h3>
-<p>Durable street lighting solutions for roads and public spaces.</p>
-</div>
-
-<div class="card">
-<img src="images/panel-light.jpg" alt="Panel Lights">
-<h3>Panel Lights</h3>
-<p>Modern LED panel lights for offices and commercial buildings.</p>
-</div>
-
-<div class="card">
-<img src="images/wire.jpg" alt="Electrical Wires">
-<h3>Electrical Wires</h3>
-<p>Premium quality wires and cables with high safety standards.</p>
-</div>
-
-<div class="card">
-<img src="images/switch.jpg" alt="Switches">
-<h3>Switches & Accessories</h3>
-<p>Modular switches, sockets, MCBs and electrical accessories.</p>
 </div>
 
 </div>
 
 </section>
 
-<!-- SERVICES -->
+/* ================= HERO ================= */
 
-<section id="services">
+.hero{
 
-<h2 class="section-title">Our Services</h2>
+padding:180px 0 100px;
 
-<div class="cards">
+background:
 
-<div class="card">
-<h3>GeM Portal Supply</h3>
-<p>Registered GeM Seller supplying products to Government Departments.</p>
-</div>
+linear-gradient(rgba(8,17,31,.92),
 
-<div class="card">
-<h3>Government Tender Supply</h3>
-<p>Reliable supply for Government projects and institutional requirements.</p>
-</div>
+rgba(8,17,31,.95)),
 
-<div class="card">
-<h3>Electrical Products Supply</h3>
-<p>Complete electrical solutions for residential, commercial and industrial projects.</p>
-</div>
+url("images/hero-bg.jpg");
 
-<div class="card">
-<h3>LED Lighting Solutions</h3>
-<p>Indoor, outdoor and decorative LED lighting products.</p>
-</div>
+background-size:cover;
 
-<div class="card">
-<h3>Industrial Supply</h3>
-<p>Industrial electrical items and equipment with quality assurance.</p>
-</div>
+background-position:center;
 
-<div class="card">
-<h3>Customer Support</h3>
-<p>Dedicated customer assistance before and after every purchase.</p>
-</div>
+}
 
-</div>
+.hero-grid{
 
-</section>
-
-<!-- WHY CHOOSE US -->
-
-<section id="why">
-
-<h2 class="section-title">Why Choose SMSH MARKETPLACE?</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>✔ Genuine Products</h3>
-<p>100% original and quality-tested products.</p>
-</div>
-
-<div class="card">
-<h3>✔ Best Pricing</h3>
-<p>Competitive wholesale and retail prices.</p>
-</div>
-
-<div class="card">
-<h3>✔ Fast Delivery</h3>
-<p>Quick dispatch and reliable delivery across India.</p>
-</div>
-
-<div class="card">
-<h3>✔ GST Billing</h3>
-<p>Proper GST invoice with every eligible purchase.</p>
-</div>
-
-<div class="card">
-<h3>✔ Trusted GeM Seller</h3>
-<p>Experienced supplier for Government procurement.</p>
-</div>
-
-<div class="card">
-<h3>✔ Customer Satisfaction</h3>
-<p>Our priority is long-term customer relationships.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- STATS -->
-
-<section>
-
-<h2 class="section-title">Business Highlights</h2>
-
-<div class="cards">
-
-<div class="card">
-<h2>100+</h2>
-<p>Products</p>
-</div>
-
-<div class="card">
-<h2>500+</h2>
-<p>Happy Customers</p>
-</div>
-
-<div class="card">
-<h2>24×7</h2>
-<p>Customer Support</p>
-</div>
-
-<div class="card">
-<h2>India</h2>
-<p>Nationwide Supply</p>
-</div>
-
-</div>
-
-</section>
-
-<style>
-
-.cards{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
+
+grid-template-columns:1.1fr .9fr;
+
+gap:60px;
+
+align-items:center;
+
 }
 
-.card{
-background:#fff;
-padding:25px;
-border-radius:12px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-text-align:center;
+.badge{
+
+display:inline-block;
+
+padding:10px 18px;
+
+border:1px solid rgba(255,176,0,.4);
+
+background:rgba(255,176,0,.08);
+
+color:#ffb000;
+
+font-size:13px;
+
+letter-spacing:1px;
+
+border-radius:30px;
+
+margin-bottom:25px;
+
+}
+
+.hero h1{
+
+font-size:58px;
+
+font-weight:800;
+
+line-height:1.2;
+
+margin-bottom:25px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#bfc7d5;
+
+margin-bottom:35px;
+
+max-width:650px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+
+gap:18px;
+
+flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+background:#ffb000;
+
+color:#111;
+
+padding:16px 30px;
+
+font-weight:700;
+
+border-radius:8px;
+
 transition:.3s;
+
 }
 
-.card:hover{
-transform:translateY(-8px);
+.primary-btn:hover{
+
+background:#ffc933;
+
+transform:translateY(-3px);
+
 }
 
-.card img{
+.secondary-btn{
+
+padding:16px 30px;
+
+border:1px solid rgba(255,255,255,.2);
+
+color:#fff;
+
+border-radius:8px;
+
+transition:.3s;
+
+}
+
+.secondary-btn:hover{
+
+background:#ffffff10;
+
+}
+
+.hero-image img{
+
 width:100%;
-height:180px;
-object-fit:cover;
-border-radius:10px;
-margin-bottom:15px;
+
+max-width:520px;
+
+margin:auto;
+
+filter:drop-shadow(0 20px 40px rgba(0,0,0,.5));
+
+animation:float 4s ease-in-out infinite;
+
 }
 
-.card h3{
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+}
+
+@media(max-width:900px){
+
+.hero{
+
+padding-top:150px;
+
+}
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+}
+<!-- ================= VENDOR SECTION ================= -->
+
+<section class="vendor-section">
+
+<div class="container">
+
+<div class="vendor-grid">
+
+<div class="vendor-card">
+
+<div class="icon">
+<i class="fa-solid fa-building-columns"></i>
+</div>
+
+<h3>GeM Portal Vendor</h3>
+
+<p>
+Registered supplier for Government e-Marketplace procurement across India.
+</p>
+
+</div>
+
+<div class="vendor-card">
+
+<div class="icon">
+<i class="fa-solid fa-bolt"></i>
+</div>
+
+<h3>Tata Power Vendor</h3>
+
+<p>
+Electrical products and lighting solutions for infrastructure projects.
+</p>
+
+</div>
+
+<div class="vendor-card">
+
+<div class="icon">
+<i class="fa-solid fa-city"></i>
+</div>
+
+<h3>Smartworks Vendor</h3>
+
+<p>
+Trusted supplier for commercial offices and enterprise projects.
+</p>
+
+</div>
+
+<div class="vendor-card">
+
+<div class="icon">
+<i class="fa-solid fa-landmark"></i>
+</div>
+
+<h3>Government Contractor</h3>
+
+<p>
+Supporting government departments with quality electrical products.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATS ================= -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-box">
+
+<h2 class="counter" data-target="100">100+</h2>
+
+<p>Products</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2 class="counter" data-target="500">500+</h2>
+
+<p>Projects Completed</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>PAN India</h2>
+
+<p>Delivery Coverage</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>24×7</h2>
+
+<p>Customer Support</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+/* ================= VENDOR SECTION ================= */
+
+.vendor-section{
+
+padding:70px 0;
+
+background:#0b1322;
+
+}
+
+.vendor-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+.vendor-card{
+
+background:#111b2e;
+
+padding:30px;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:12px;
+
+transition:.3s;
+
+}
+
+.vendor-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#ffb000;
+
+}
+
+.vendor-card .icon{
+
+width:65px;
+
+height:65px;
+
+background:#ffb000;
+
+color:#111;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:28px;
+
+border-radius:50%;
+
+margin-bottom:20px;
+
+}
+
+.vendor-card h3{
+
+margin-bottom:12px;
+
+font-size:22px;
+
+}
+
+.vendor-card p{
+
+color:#bfc7d5;
+
+line-height:1.8;
+
+}
+
+/* ================= STATS ================= */
+
+.stats{
+
+background:#08101d;
+
+padding:40px 0;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:20px;
+
+text-align:center;
+
+}
+
+.stat-box{
+
+padding:20px;
+
+}
+
+.stat-box h2{
+
+font-size:42px;
+
+color:#ffb000;
+
 margin-bottom:10px;
-color:#0d47a1;
+
+font-weight:800;
+
 }
 
-.card p{
-line-height:1.7;
+.stat-box p{
+
+color:#bfc7d5;
+
+font-size:17px;
+
 }
 
-</style>
-<!-- ================= GALLERY ================= -->
+@media(max-width:768px){
 
-<section id="gallery">
+.vendor-grid,
+.stats-grid{
 
-<h2 class="section-title">Gallery</h2>
+grid-template-columns:1fr;
 
-<div class="cards">
+}
 
-<div class="card">
-<img src="images/gallery1.jpg" alt="LED Lighting">
-<h3>LED Lighting</h3>
+}
+<!-- ================= LEADING BRANDS ================= -->
+
+<section id="brands" class="brands-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="sub-title">TRUSTED BRANDS</span>
+
+<h2>Leading Electrical Brands</h2>
+
+<p>
+We deal in India's most trusted lighting and electrical brands for
+Government, Commercial and Industrial projects.
+</p>
+
 </div>
 
-<div class="card">
-<img src="images/gallery2.jpg" alt="Electrical Products">
-<h3>Electrical Products</h3>
+<div class="brand-grid">
+
+<div class="brand-card">
+<img src="images/brands/havells.png" alt="Havells">
 </div>
 
-<div class="card">
-<img src="images/gallery3.jpg" alt="Industrial Supply">
-<h3>Industrial Supply</h3>
+<div class="brand-card">
+<img src="images/brands/philips.png" alt="Philips">
 </div>
 
-<div class="card">
-<img src="images/gallery4.jpg" alt="Government Supply">
-<h3>Government Supply</h3>
+<div class="brand-card">
+<img src="images/brands/crompton.png" alt="Crompton">
 </div>
 
-<div class="card">
-<img src="images/gallery5.jpg" alt="GeM Supply">
-<h3>GeM Supply</h3>
+<div class="brand-card">
+<img src="images/brands/wipro.png" alt="Wipro">
 </div>
 
-<div class="card">
-<img src="images/gallery6.jpg" alt="Projects">
-<h3>Our Projects</h3>
+<div class="brand-card">
+<img src="images/brands/syska.png" alt="Syska">
+</div>
+
+<div class="brand-card">
+<img src="images/brands/bajaj.png" alt="Bajaj">
+</div>
+
 </div>
 
 </div>
 
 </section>
 
-<!-- ================= REVIEWS ================= -->
+<!-- ================= PRODUCT CATALOG ================= -->
 
-<section id="reviews">
+<section id="catalog" class="catalog">
 
-<h2 class="section-title">Customer Reviews</h2>
+<div class="container">
 
-<div class="cards">
+<div class="section-header">
 
-<div class="card">
-⭐⭐⭐⭐⭐
-<h3>Rahul Sharma</h3>
-<p>Excellent quality products and timely delivery.</p>
+<span class="sub-title">OUR PRODUCTS</span>
+
+<h2>Browse Product Catalog</h2>
+
+<p>
+
+Premium LED Lighting & Electrical Products for
+Homes, Offices, Industries & Government Projects.
+
+</p>
+
 </div>
 
-<div class="card">
-⭐⭐⭐⭐⭐
-<h3>Amit Kumar</h3>
-<p>Very professional service and genuine electrical products.</p>
+<div class="catalog-grid">
+
+<div class="product-card">
+
+<img src="images/products/led-bulb.jpg">
+
+<div class="product-info">
+
+<span class="product-tag">LED</span>
+
+<h3>LED Bulbs</h3>
+
+<p>
+
+Energy Efficient LED Bulbs for Residential &
+Commercial Applications.
+
+</p>
+
+<a href="#contact" class="catalog-btn">
+
+Enquiry Now
+
+</a>
+
 </div>
 
-<div class="card">
-⭐⭐⭐⭐⭐
-<h3>Priya Gupta</h3>
-<p>Highly recommended for GeM and government supply.</p>
+</div>
+
+<div class="product-card">
+
+<img src="images/products/flood-light.jpg">
+
+<div class="product-info">
+
+<span class="product-tag">Outdoor</span>
+
+<h3>Flood Lights</h3>
+
+<p>
+
+High Power LED Flood Lights
+for Outdoor Installations.
+
+</p>
+
+<a href="#contact" class="catalog-btn">
+
+Enquiry Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/products/street-light.jpg">
+
+<div class="product-info">
+
+<span class="product-tag">Government</span>
+
+<h3>Street Lights</h3>
+
+<p>
+
+Reliable LED Street Lighting
+Solutions.
+
+</p>
+
+<a href="#contact" class="catalog-btn">
+
+Enquiry Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/products/panel-light.jpg">
+
+<div class="product-info">
+
+<span class="product-tag">Office</span>
+
+<h3>Panel Lights</h3>
+
+<p>
+
+Modern LED Panel Lights for
+Commercial Buildings.
+
+</p>
+
+<a href="#contact" class="catalog-btn">
+
+Enquiry Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/products/wire.jpg">
+
+<div class="product-info">
+
+<span class="product-tag">Electrical</span>
+
+<h3>Electrical Wires</h3>
+
+<p>
+
+Premium Quality Copper Wires &
+Industrial Cables.
+
+</p>
+
+<a href="#contact" class="catalog-btn">
+
+Enquiry Now
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/products/switch.jpg">
+
+<div class="product-info">
+
+<span class="product-tag">Accessories</span>
+
+<h3>Switches & MCB</h3>
+
+<p>
+
+Modular Switches, Sockets,
+MCBs and Accessories.
+
+</p>
+
+<a href="#contact" class="catalog-btn">
+
+Enquiry Now
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+/*================= SECTION =================*/
+
+.section-header{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.sub-title{
+
+display:inline-block;
+
+padding:8px 18px;
+
+background:#ffb00020;
+
+border:1px solid #ffb000;
+
+border-radius:30px;
+
+color:#ffb000;
+
+font-size:13px;
+
+margin-bottom:15px;
+
+}
+
+.section-header h2{
+
+font-size:42px;
+
+margin-bottom:15px;
+
+}
+
+.section-header p{
+
+max-width:700px;
+
+margin:auto;
+
+color:#bfc7d5;
+
+line-height:1.8;
+
+}
+
+/*================ BRANDS ================*/
+
+.brands-section{
+
+padding:90px 0;
+
+background:#0d1728;
+
+}
+
+.brand-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+gap:25px;
+
+}
+
+.brand-card{
+
+background:#121d31;
+
+padding:35px;
+
+border-radius:12px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+height:140px;
+
+transition:.3s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.brand-card:hover{
+
+transform:translateY(-8px);
+
+border-color:#ffb000;
+
+}
+
+/*================ PRODUCT ================*/
+
+.catalog{
+
+padding:100px 0;
+
+background:#09111f;
+
+}
+
+.catalog-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.product-card{
+
+background:#111b2e;
+
+border-radius:15px;
+
+overflow:hidden;
+
+transition:.4s;
+
+}
+
+.product-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.product-card img{
+
+width:100%;
+
+height:230px;
+
+object-fit:cover;
+
+}
+
+.product-info{
+
+padding:25px;
+
+}
+
+.product-tag{
+
+display:inline-block;
+
+background:#ffb000;
+
+color:#111;
+
+padding:6px 14px;
+
+border-radius:30px;
+
+font-size:12px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.product-info h3{
+
+margin-bottom:12px;
+
+font-size:24px;
+
+}
+
+.product-info p{
+
+color:#bfc7d5;
+
+line-height:1.8;
+
+margin-bottom:20px;
+
+}
+
+.catalog-btn{
+
+display:inline-block;
+
+background:#ffb000;
+
+padding:12px 25px;
+
+border-radius:8px;
+
+font-weight:700;
+
+color:#111;
+
+transition:.3s;
+
+}
+
+.catalog-btn:hover{
+
+background:#ffd15a;
+
+}
+<!-- ================= WHY SMSH ================= -->
+
+<section id="why" class="why-section">
+
+<div class="container">
+
+<div class="section-header">
+
+<span class="sub-title">
+
+WHY CHOOSE US
+
+</span>
+
+<h2>
+
+Why SMSH MARKETPLACE?
+
+</h2>
+
+<p>
+
+We provide reliable electrical products and complete
+lighting solutions for Government, Industrial and Commercial
+projects across India.
+
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fa-solid fa-medal"></i>
+</div>
+
+<h3>Quality Assured</h3>
+
+<p>
+
+Every product is tested for quality and supplied
+from trusted manufacturers.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fa-solid fa-truck-fast"></i>
+</div>
+
+<h3>Fast Delivery</h3>
+
+<p>
+
+Quick dispatch and safe delivery
+across India.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fa-solid fa-building-columns"></i>
+</div>
+
+<h3>Registered GeM Vendor</h3>
+
+<p>
+
+Trusted supplier for Government
+Departments and Institutions.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fa-solid fa-file-invoice"></i>
+</div>
+
+<h3>GST Billing</h3>
+
+<p>
+
+Proper GST Invoice with every
+eligible purchase.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fa-solid fa-headset"></i>
+</div>
+
+<h3>24×7 Support</h3>
+
+<p>
+
+Dedicated customer support before
+and after sales.
+
+</p>
+
+</div>
+
+<div class="why-card">
+
+<div class="why-icon">
+<i class="fa-solid fa-indian-rupee-sign"></i>
+</div>
+
+<h3>Best Pricing</h3>
+
+<p>
+
+Competitive prices for Retail,
+Wholesale and Government Supply.
+
+</p>
+
+</div>
+
 </div>
 
 </div>
 
 </section>
 
+<!-- ================= COMPANY INFO ================= -->
+
+<section class="company-info">
+
+<div class="container">
+
+<div class="info-box">
+
+<h2>Business Information</h2>
+
+<table>
+
+<tr>
+
+<td>Business Name</td>
+
+<td>SMSH MARKETPLACE</td>
+
+</tr>
+
+<tr>
+
+<td>Proprietor</td>
+
+<td>Md Shahid</td>
+
+</tr>
+
+<tr>
+
+<td>GSTIN</td>
+
+<td>07OKLPS2460H1ZJ</td>
+
+</tr>
+
+<tr>
+
+<td>UDYAM</td>
+
+<td>UDYAM-DL-02-0092630</td>
+
+</tr>
+
+<tr>
+
+<td>GeM Seller ID</td>
+
+<td>3XN1250013172389</td>
+
+</tr>
+
+<tr>
+
+<td>Email</td>
+
+<td>smshmarketplace@gmail.com</td>
+
+</tr>
+
+<tr>
+
+<td>Website</td>
+
+<td>www.smshmarketplace.in</td>
+
+</tr>
+
+</table>
+
+</div>
+
+</div>
+
+</section>
+/*================ WHY SECTION ================*/
+
+.why-section{
+
+padding:100px 0;
+
+background:#0d1728;
+
+}
+
+.why-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+.why-card{
+
+background:#111b2e;
+
+padding:35px;
+
+border-radius:15px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.05);
+
+}
+
+.why-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#ffb000;
+
+}
+
+.why-icon{
+
+width:70px;
+
+height:70px;
+
+background:#ffb000;
+
+color:#111;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:30px;
+
+border-radius:50%;
+
+margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}
+
+.why-card p{
+
+color:#bfc7d5;
+
+line-height:1.8;
+
+}
+
+/*================ COMPANY INFO ================*/
+
+.company-info{
+
+padding:90px 0;
+
+background:#09111f;
+
+}
+
+.info-box{
+
+background:#111b2e;
+
+padding:40px;
+
+border-radius:15px;
+
+overflow:auto;
+
+}
+
+.info-box h2{
+
+margin-bottom:30px;
+
+font-size:34px;
+
+}
+
+.info-box table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.info-box td{
+
+padding:18px;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.info-box td:first-child{
+
+font-weight:700;
+
+color:#ffb000;
+
+width:35%;
+
+}
+/*================ CTA SECTION ================*/
+
+.cta-section{
+
+padding:100px 0;
+
+background:#ffb000;
+
+}
+
+.cta-box{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:40px;
+
+flex-wrap:wrap;
+
+}
+
+.cta-box h2{
+
+font-size:42px;
+
+color:#111;
+
+margin:20px 0;
+
+}
+
+.cta-box p{
+
+font-size:18px;
+
+line-height:1.8;
+
+color:#333;
+
+max-width:650px;
+
+}
+
+.cta-buttons{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.cta-section .primary-btn{
+
+background:#111;
+
+color:#fff;
+
+padding:15px 28px;
+
+border-radius:8px;
+
+font-weight:700;
+
+}
+
+.cta-section .secondary-btn{
+
+background:#fff;
+
+color:#111;
+
+padding:15px 28px;
+
+border-radius:8px;
+
+font-weight:700;
+
+border:none;
+
+}
+
+/*================ TESTIMONIALS ================*/
+
+.testimonial-section{
+
+padding:100px 0;
+
+background:#09111f;
+
+}
+
+.testimonial-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.testimonial-card{
+
+background:#111b2e;
+
+padding:35px;
+
+border-radius:15px;
+
+transition:.4s;
+
+border:1px solid rgba(255,255,255,.08);
+
+font-size:20px;
+
+color:#ffb000;
+
+}
+
+.testimonial-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#ffb000;
+
+}
+
+.testimonial-card h3{
+
+margin-top:20px;
+
+font-size:24px;
+
+color:#fff;
+
+}
+
+.testimonial-card h5{
+
+margin:8px 0 20px;
+
+font-size:15px;
+
+font-weight:500;
+
+color:#bfc7d5;
+
+}
+
+.testimonial-card p{
+
+font-size:16px;
+
+line-height:1.8;
+
+color:#bfc7d5;
+
+}
 <!-- ================= CONTACT ================= -->
 
-<section id="contact">
+<section id="contact" class="contact-section">
 
-<h2 class="section-title">Contact Us</h2>
+<div class="container">
 
-<div class="cards">
+<div class="section-header">
 
-<div class="card">
+<span class="sub-title">CONTACT US</span>
 
-<h3>SMSH MARKETPLACE</h3>
+<h2>Let's Discuss Your Requirement</h2>
 
-<p><b>Proprietor:</b> Md Shahid</p>
-
-<p><b>📍 Address</b><br>
-A-476, Jawahar Mohalla,<br>
-Patparganj,<br>
-East Delhi – 110091</p>
-
-<p><b>📞 Mobile</b><br>
-7217612989</p>
-
-<p><b>💬 WhatsApp</b><br>
-9599041773</p>
-
-<p><b>📧 Email</b><br>
-smshmarketplace@gmail.com</p>
-
-<p><b>🌐 Website</b><br>
-www.smshmarketplace.in</p>
+<p>
+Need LED Lighting, Electrical Products or Government Supply?
+Contact SMSH MARKETPLACE today.
+</p>
 
 </div>
 
-<div class="card">
+<div class="contact-grid">
+
+<!-- Contact Info -->
+
+<div class="contact-info">
+
+<div class="info-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<div>
+
+<h3>Office Address</h3>
+
+<p>
+
+A-476, Jawahar Mohalla,<br>
+
+Patparganj,<br>
+
+East Delhi - 110091
+
+</p>
+
+</div>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<h3>Call Us</h3>
+
+<p>
+
++91 7217612989
+
+</p>
+
+</div>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<div>
+
+<h3>WhatsApp</h3>
+
+<p>
+
++91 9599041773
+
+</p>
+
+</div>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<div>
+
+<h3>Email</h3>
+
+<p>
+
+smshmarketplace@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<div class="info-card">
+
+<i class="fa-solid fa-globe"></i>
+
+<div>
+
+<h3>Website</h3>
+
+<p>
+
+www.smshmarketplace.in
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Contact Form -->
+
+<div class="contact-form">
 
 <form>
 
-<input type="text" placeholder="Your Name" required>
+<input
+type="text"
+placeholder="Your Name"
+required>
 
-<input type="email" placeholder="Your Email" required>
+<input
+type="email"
+placeholder="Email Address"
+required>
 
-<input type="tel" placeholder="Mobile Number">
+<input
+type="tel"
+placeholder="Mobile Number"
+required>
 
-<textarea rows="6" placeholder="Your Message"></textarea>
+<input
+type="text"
+placeholder="Company Name">
 
-<button class="btn" type="submit">Send Message</button>
+<textarea
+rows="6"
+placeholder="Write Your Requirement"
+required>
+
+</textarea>
+
+<button
+type="submit"
+class="primary-btn">
+
+Send Enquiry
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= GOOGLE MAP ================= -->
+
+<section class="map-section">
+
+<iframe
+
+src="https://maps.google.com/maps?q=Patparganj%20Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed"
+
+loading="lazy"
+
+allowfullscreen>
+
+</iframe>
+
+</section>
+
+/*================ CONTACT ================*/
+
+.contact-section{
+
+padding:100px 0;
+
+background:#0d1728;
+
+}
+
+.contact-grid{
+
+display:grid;
+
+grid-template-columns:1fr 1fr;
+
+gap:50px;
+
+}
+
+.contact-info{
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+.info-card{
+
+display:flex;
+
+gap:20px;
+
+padding:25px;
+
+background:#111b2e;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.info-card:hover{
+
+border:1px solid #ffb000;
+
+transform:translateY(-5px);
+
+}
+
+.info-card i{
+
+font-size:28px;
+
+color:#ffb000;
+
+margin-top:5px;
+
+}
+
+.info-card h3{
+
+margin-bottom:8px;
+
+}
+
+.info-card p{
+
+color:#bfc7d5;
+
+line-height:1.7;
+
+}
+
+/* FORM */
+
+.contact-form{
+
+background:#111b2e;
+
+padding:35px;
+
+border-radius:15px;
+
+}
+
+.contact-form input,
+
+.contact-form textarea{
+
+width:100%;
+
+padding:16px;
+
+margin-bottom:18px;
+
+border:none;
+
+outline:none;
+
+border-radius:10px;
+
+background:#1a2742;
+
+color:#fff;
+
+font-size:15px;
+
+}
+
+.contact-form textarea{
+
+resize:none;
+
+}
+
+.contact-form button{
+
+width:100%;
+
+cursor:pointer;
+
+}
+
+/* MAP */
+
+.map-section iframe{
+
+width:100%;
+
+height:450px;
+
+border:0;
+
+display:block;
+
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+<!-- ================= NEWSLETTER ================= -->
+
+<section class="newsletter">
+
+<div class="container">
+
+<div class="newsletter-box">
+
+<div>
+
+<span class="sub-title">NEWSLETTER</span>
+
+<h2>Stay Updated with SMSH MARKETPLACE</h2>
+
+<p>
+
+Get updates about new LED Lighting Products,
+Government Tenders and Electrical Solutions.
+
+</p>
+
+</div>
+
+<form class="newsletter-form">
+
+<input
+type="email"
+placeholder="Enter your email address"
+required>
+
+<button type="submit">
+
+Subscribe
+
+</button>
 
 </form>
 
@@ -608,229 +2180,502 @@ www.smshmarketplace.in</p>
 
 </section>
 
-<style>
-
-form input,
-form textarea{
-width:100%;
-padding:15px;
-margin-bottom:15px;
-border:1px solid #ddd;
-border-radius:8px;
-font-size:16px;
-}
-
-form textarea{
-resize:none;
-}
-
-form button{
-border:none;
-cursor:pointer;
-}
-
-</style>
-
-<!-- ================= GOOGLE MAP ================= -->
-
-<section id="location">
-
-<h2 class="section-title">Our Location</h2>
-
-<div style="width:100%;height:450px;overflow:hidden;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.15);">
-
-<iframe
-src="https://maps.google.com/maps?q=Patparganj%20Delhi&t=&z=15&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="450"
-style="border:0;"
-loading="lazy"
-allowfullscreen>
-</iframe>
-
-</div>
-
-</section>
 
 <!-- ================= FOOTER ================= -->
 
-<footer style="background:#0d47a1;color:#fff;padding:50px 8%;text-align:center;">
+<footer>
+
+<div class="container">
+
+<div class="footer-grid">
+
+<div>
 
 <h2>SMSH MARKETPLACE</h2>
 
 <p>
-Trusted GeM Seller | LED Lighting | Electrical Products
+
+Trusted GeM Registered Vendor for
+LED Lighting, Electrical Products,
+Industrial Supply and Government Procurement.
+
 </p>
 
-<br>
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#catalog">Catalog</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Business Details</h3>
+
+<p><b>GSTIN:</b> 07OKLPS2460H1ZJ</p>
+
+<p><b>UDYAM:</b> UDYAM-DL-02-0092630</p>
+
+<p><b>GeM ID:</b> 3XN1250013172389</p>
+
+</div>
+
+<div>
+
+<h3>Contact</h3>
+
+<p>📞 +91 7217612989</p>
+
+<p>💬 +91 9599041773</p>
+
+<p>📧 smshmarketplace@gmail.com</p>
+
+<p>🌐 www.smshmarketplace.in</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="footer-bottom">
 
 <p>
 
-📍 A-476, Jawahar Mohalla,
-Patparganj,
-East Delhi – 110091
+© 2026 SMSH MARKETPLACE. All Rights Reserved.
 
 </p>
 
-<p>
+<div class="social-icons">
 
-📞 7217612989 |
-💬 9599041773
+<a href="#"><i class="fab fa-facebook-f"></i></a>
 
-</p>
+<a href="#"><i class="fab fa-instagram"></i></a>
 
-<p>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
 
-📧 smshmarketplace@gmail.com
+<a href="#"><i class="fab fa-youtube"></i></a>
 
-</p>
+</div>
 
-<p>
+</div>
 
-🌐 www.smshmarketplace.in
-
-</p>
-
-<br>
-
-<p>
-
-GSTIN : 07OKLPS2460H1ZJ
-
-</p>
-
-<p>
-
-GeM Seller ID :
-3XN1250013172389
-
-</p>
-
-<p>
-
-UDYAM :
-UDYAM-DL-02-0092630
-
-</p>
-
-<hr style="margin:30px 0;">
-
-<p>
-
-© 2026 SMSH MARKETPLACE
-All Rights Reserved.
-
-</p>
+</div>
 
 </footer>
 
+
 <!-- ================= FLOATING BUTTONS ================= -->
 
-<a href="https://wa.me/919599041773"
-class="whatsapp"
+<a
+
+href="https://wa.me/919599041773"
+
+class="whatsapp-btn"
+
 target="_blank">
 
-💬
+<i class="fab fa-whatsapp"></i>
 
 </a>
 
-<a href="tel:7217612989"
-class="call">
+<a
 
-📞
+href="tel:7217612989"
+
+class="call-btn">
+
+<i class="fa-solid fa-phone"></i>
 
 </a>
 
-<button onclick="topFunction()"
-id="topBtn">
+<button
 
-⬆
+id="topBtn"
+
+onclick="topFunction()">
+
+<i class="fa-solid fa-arrow-up"></i>
 
 </button>
 
-<style>
+/*================ NEWSLETTER ================*/
 
-.whatsapp{
+.newsletter{
 
-position:fixed;
-bottom:20px;
-right:20px;
-width:60px;
-height:60px;
-background:#25D366;
-color:#fff;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:30px;
-text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
-z-index:999;
+padding:90px 0;
+
+background:#111827;
+
 }
 
-.call{
+.newsletter-box{
+
+background:#ffb000;
+
+padding:50px;
+
+border-radius:18px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+gap:30px;
+
+flex-wrap:wrap;
+
+}
+
+.newsletter-box h2{
+
+color:#111;
+
+margin:15px 0;
+
+font-size:36px;
+
+}
+
+.newsletter-box p{
+
+color:#333;
+
+max-width:600px;
+
+}
+
+.newsletter-form{
+
+display:flex;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+}
+
+.newsletter-form input{
+
+padding:16px;
+
+width:320px;
+
+border:none;
+
+border-radius:8px;
+
+}
+
+.newsletter-form button{
+
+background:#111;
+
+color:#fff;
+
+padding:16px 30px;
+
+border:none;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-weight:700;
+
+}
+
+/*================ FOOTER ================*/
+
+footer{
+
+background:#08101d;
+
+padding:80px 0 25px;
+
+}
+
+.footer-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:35px;
+
+}
+
+.footer-grid h2,
+.footer-grid h3{
+
+margin-bottom:20px;
+
+}
+
+.footer-grid p,
+.footer-grid li{
+
+color:#bfc7d5;
+
+line-height:1.9;
+
+list-style:none;
+
+}
+
+.footer-grid a{
+
+color:#bfc7d5;
+
+text-decoration:none;
+
+}
+
+.footer-grid a:hover{
+
+color:#ffb000;
+
+}
+
+footer hr{
+
+margin:40px 0;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+.footer-bottom{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+flex-wrap:wrap;
+
+gap:20px;
+
+}
+
+.social-icons{
+
+display:flex;
+
+gap:15px;
+
+}
+
+.social-icons a{
+
+width:45px;
+
+height:45px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+background:#111b2e;
+
+border-radius:50%;
+
+color:#fff;
+
+transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+background:#ffb000;
+
+color:#111;
+
+}
+
+/*================ FLOATING BUTTONS ================*/
+
+.whatsapp-btn,
+.call-btn,
+#topBtn{
 
 position:fixed;
-bottom:90px;
-right:20px;
+
+right:25px;
+
 width:60px;
+
 height:60px;
-background:#0d47a1;
-color:#fff;
+
 border-radius:50%;
+
 display:flex;
+
 align-items:center;
+
 justify-content:center;
-font-size:28px;
+
+font-size:24px;
+
+color:#fff;
+
 text-decoration:none;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
 z-index:999;
+
+}
+
+.whatsapp-btn{
+
+bottom:20px;
+
+background:#25D366;
+
+}
+
+.call-btn{
+
+bottom:95px;
+
+background:#0066ff;
+
 }
 
 #topBtn{
 
-display:none;
-position:fixed;
-bottom:160px;
-right:20px;
-width:55px;
-height:55px;
+bottom:170px;
+
+background:#ffb000;
+
 border:none;
-border-radius:50%;
-background:#ff9800;
-color:#fff;
-font-size:22px;
+
 cursor:pointer;
-box-shadow:0 5px 15px rgba(0,0,0,.3);
+
+display:none;
+
+color:#111;
 
 }
 
-</style>
+.whatsapp-btn:hover,
+.call-btn:hover,
+#topBtn:hover{
 
+transform:scale(1.1);
+
+transition:.3s;
+
+}
+
+@media(max-width:768px){
+
+.newsletter-box{
+
+padding:30px;
+
+}
+
+.newsletter-form input{
+
+width:100%;
+
+}
+
+.newsletter-form{
+
+width:100%;
+
+}
+
+.newsletter-form button{
+
+width:100%;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+justify-content:center;
+
+}
+
+}
 <script>
 
-window.onscroll=function(){
+/*================ MOBILE MENU ================*/
 
-scrollFunction();
+const menu=document.querySelector(".menu");
 
-};
+const nav=document.querySelector("nav");
 
-function scrollFunction(){
+menu.onclick=function(){
 
-if(document.body.scrollTop>300||
+nav.classList.toggle("active");
 
-document.documentElement.scrollTop>300){
+}
 
-document.getElementById("topBtn").style.display="block";
+/*================ STICKY HEADER ================*/
+
+window.addEventListener("scroll",function(){
+
+const header=document.querySelector("header");
+
+if(window.scrollY>60){
+
+header.style.background="#08101d";
+
+header.style.boxShadow="0 5px 20px rgba(0,0,0,.35)";
 
 }else{
 
-document.getElementById("topBtn").style.display="none";
+header.style.background="transparent";
+
+header.style.boxShadow="none";
 
 }
 
+});
+
+/*================ BACK TO TOP ================*/
+
+const topBtn=document.getElementById("topBtn");
+
+window.addEventListener("scroll",function(){
+
+if(window.pageYOffset>300){
+
+topBtn.style.display="flex";
+
+}else{
+
+topBtn.style.display="none";
+
 }
+
+});
 
 function topFunction(){
 
@@ -844,8 +2689,1469 @@ behavior:"smooth"
 
 }
 
+/*================ COUNTER ================*/
+
+const counters=document.querySelectorAll(".counter");
+
+const speed=150;
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const counter=entry.target;
+
+const update=()=>{
+
+const target=+counter.dataset.target;
+
+const count=+counter.innerText.replace("+","");
+
+const inc=Math.ceil(target/speed);
+
+if(count<target){
+
+counter.innerText=count+inc+"+";
+
+setTimeout(update,20);
+
+}else{
+
+counter.innerText=target+"+";
+
+}
+
+}
+
+update();
+
+observer.unobserve(counter);
+
+}
+
+});
+
+});
+
+counters.forEach(counter=>{
+
+observer.observe(counter);
+
+});
+
+/*================ CONTACT FORM ================*/
+
+const form=document.querySelector(".contact-form form");
+
+if(form){
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank You! Your enquiry has been submitted successfully.");
+
+form.reset();
+
+});
+
+}
+
+/*================ NEWSLETTER ================*/
+
+const newsletter=document.querySelector(".newsletter-form");
+
+if(newsletter){
+
+newsletter.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("Thank you for subscribing!");
+
+newsletter.reset();
+
+});
+
+}
+
+/*================ SCROLL ANIMATION ================*/
+
+const cards=document.querySelectorAll(
+
+".product-card,.vendor-card,.why-card,.testimonial-card,.brand-card"
+
+);
+
+const reveal=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+});
+
+cards.forEach(card=>{
+
+card.classList.add("hidden");
+
+reveal.observe(card);
+
+});
+
 </script>
+/*================ MOBILE MENU ================*/
 
-</body>
+@media(max-width:900px){
 
-</html>
+nav{
+
+position:absolute;
+
+top:80px;
+
+left:0;
+
+width:100%;
+
+background:#08101d;
+
+display:none;
+
+padding:25px;
+
+}
+
+nav.active{
+
+display:block;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+}
+
+/*================ ANIMATION ================*/
+
+.hidden{
+
+opacity:0;
+
+transform:translateY(50px);
+
+transition:all .8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+<!-- ================= SHOP TOOLS ================= -->
+
+<section class="shop-tools">
+
+<div class="container">
+
+<div class="tools">
+
+<input
+type="text"
+id="searchBox"
+placeholder="🔍 Search Products...">
+
+<select id="categoryFilter">
+
+<option value="all">All Categories</option>
+
+<option value="led">LED</option>
+
+<option value="outdoor">Outdoor</option>
+
+<option value="wire">Wire</option>
+
+<option value="switch">Switch</option>
+
+</select>
+
+</div>
+
+</div>
+
+</section>
+
+<div class="product-card" data-category="led">
+
+<img src="images/products/led-bulb.jpg">
+
+<div class="product-info">
+
+<span class="product-tag">
+
+LED
+
+</span>
+
+<h3 class="product-name">
+
+LED Bulb
+
+</h3>
+
+<p>
+
+Premium Energy Saving LED Bulb.
+
+</p>
+
+<div class="product-footer">
+
+<a href="#contact"
+class="catalog-btn">
+
+Enquiry
+
+</a>
+
+<button class="cart-btn">
+
+<i class="fa fa-cart-shopping"></i>
+
+Add
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+/* SHOP TOOLS */
+
+.shop-tools{
+
+padding:40px 0;
+
+background:#08101d;
+
+}
+
+.tools{
+
+display:flex;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+.tools input,
+.tools select{
+
+padding:15px;
+
+border:none;
+
+border-radius:8px;
+
+width:320px;
+
+font-size:16px;
+
+}
+
+.product-footer{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-top:20px;
+
+}
+
+.cart-btn{
+
+background:#0d6efd;
+
+color:#fff;
+
+border:none;
+
+padding:12px 18px;
+
+border-radius:8px;
+
+cursor:pointer;
+
+font-weight:600;
+
+}
+
+.cart-btn:hover{
+
+background:#004fd1;
+
+}
+<script>
+
+/* SEARCH */
+
+const search=document.getElementById("searchBox");
+
+search.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+document.querySelectorAll(".product-card").forEach(card=>{
+
+let name=card.querySelector(".product-name").innerText.toLowerCase();
+
+card.style.display=name.includes(value)?"block":"none";
+
+});
+
+});
+
+/* CATEGORY */
+
+const filter=document.getElementById("categoryFilter");
+
+filter.addEventListener("change",function(){
+
+let category=this.value;
+
+document.querySelectorAll(".product-card").forEach(card=>{
+
+if(category=="all"){
+
+card.style.display="block";
+
+}
+
+else{
+
+card.style.display=
+
+card.dataset.category==category
+
+?
+
+"block"
+
+:
+
+"none";
+
+}
+
+});
+
+});
+
+/* ADD TO CART */
+
+document.querySelectorAll(".cart-btn").forEach(btn=>{
+
+btn.onclick=function(){
+
+this.innerHTML="✔ Added";
+
+this.style.background="#28a745";
+
+};
+
+});
+
+</script>
+<!-- ================= PAGE LOADER ================= -->
+
+<div id="loader">
+
+<div class="loader-circle"></div>
+
+<h2>SMSH MARKETPLACE</h2>
+
+</div>
+
+<!-- ================= THEME BUTTON ================= -->
+
+<button id="themeBtn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<!-- ================= TOAST ================= -->
+
+<div id="toast">
+
+✔ Product Added Successfully
+
+</div>
+/*================ LOADER ================*/
+
+#loader{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:#08101d;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+transition:.5s;
+
+}
+
+.loader-circle{
+
+width:70px;
+
+height:70px;
+
+border:7px solid #333;
+
+border-top:7px solid #ffb000;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+
+margin-bottom:25px;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/*================ THEME BUTTON ================*/
+
+#themeBtn{
+
+position:fixed;
+
+left:20px;
+
+bottom:20px;
+
+width:60px;
+
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+background:#ffb000;
+
+color:#111;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+
+}
+
+/*================ LIGHT MODE ================*/
+
+.light-mode{
+
+background:#f4f6fb;
+
+color:#222;
+
+}
+
+.light-mode header,
+
+.light-mode footer,
+
+.light-mode .vendor-card,
+
+.light-mode .product-card,
+
+.light-mode .why-card,
+
+.light-mode .testimonial-card,
+
+.light-mode .contact-form,
+
+.light-mode .info-card{
+
+background:#ffffff;
+
+color:#222;
+
+}
+
+.light-mode p,
+
+.light-mode td,
+
+.light-mode h5{
+
+color:#555;
+
+}
+
+/*================ IMAGE ZOOM ================*/
+
+.product-card img{
+
+transition:.5s;
+
+}
+
+.product-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+/*================ TOAST ================*/
+
+#toast{
+
+position:fixed;
+
+top:25px;
+
+right:25px;
+
+background:#28a745;
+
+color:#fff;
+
+padding:16px 24px;
+
+border-radius:8px;
+
+display:none;
+
+z-index:99999;
+
+animation:fade .4s;
+
+}
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateX(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateX(0);
+
+}
+
+}
+<script>
+
+/*================ PAGE LOADER ================*/
+
+window.addEventListener("load",function(){
+
+setTimeout(function(){
+
+document.getElementById("loader").style.display="none";
+
+},1200);
+
+});
+
+/*================ DARK/LIGHT MODE ================*/
+
+const themeBtn=document.getElementById("themeBtn");
+
+themeBtn.onclick=function(){
+
+document.body.classList.toggle("light-mode");
+
+if(document.body.classList.contains("light-mode")){
+
+themeBtn.innerHTML='<i class="fa-solid fa-sun"></i>';
+
+}else{
+
+themeBtn.innerHTML='<i class="fa-solid fa-moon"></i>';
+
+}
+
+};
+
+/*================ TOAST MESSAGE ================*/
+
+function showToast(msg){
+
+const toast=document.getElementById("toast");
+
+toast.innerHTML=msg;
+
+toast.style.display="block";
+
+setTimeout(function(){
+
+toast.style.display="none";
+
+},2500);
+
+}
+
+/*================ ADD TO CART ================*/
+
+document.querySelectorAll(".cart-btn").forEach(btn=>{
+
+btn.onclick=function(){
+
+this.innerHTML="✔ Added";
+
+this.style.background="#28a745";
+
+showToast("✔ Product Added Successfully");
+
+};
+
+});
+
+</script>
+<!-- ================= SCROLL PROGRESS ================= -->
+
+<div id="progressBar"></div>
+
+<!-- ================= WISHLIST SIDEBAR ================= -->
+
+<div id="wishlist">
+
+<div class="wishlist-header">
+
+<h3>❤️ Wishlist</h3>
+
+<button id="closeWishlist">&times;</button>
+
+</div>
+
+<ul id="wishlistItems">
+
+<li>No items added</li>
+
+</ul>
+
+</div>
+
+<button id="wishlistBtn">
+
+❤️
+
+<span id="wishlistCount">0</span>
+
+</button>
+
+<!-- ================= QUICK VIEW ================= -->
+
+<div id="quickView">
+
+<div class="quick-box">
+
+<span id="closeQuick">&times;</span>
+
+<img id="quickImg" src="">
+
+<h2 id="quickTitle"></h2>
+
+<p id="quickDesc"></p>
+
+</div>
+
+</div>
+<div class="product-footer">
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<button class="wishlist-add">
+
+❤️
+
+</button>
+
+<button
+class="quick-btn">
+
+Quick View
+
+</button>
+
+</div>
+/*================ PROGRESS BAR ================*/
+
+#progressBar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0;
+
+background:#ffb000;
+
+z-index:99999;
+
+}
+
+/*================ WISHLIST ================*/
+
+#wishlist{
+
+position:fixed;
+
+top:0;
+
+right:-350px;
+
+width:320px;
+
+height:100%;
+
+background:#111b2e;
+
+color:#fff;
+
+transition:.4s;
+
+padding:20px;
+
+overflow:auto;
+
+z-index:9999;
+
+}
+
+#wishlist.active{
+
+right:0;
+
+}
+
+.wishlist-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:20px;
+
+}
+
+#wishlistBtn{
+
+position:fixed;
+
+left:20px;
+
+bottom:100px;
+
+width:60px;
+
+height:60px;
+
+border:none;
+
+border-radius:50%;
+
+background:#ff1744;
+
+color:#fff;
+
+font-size:24px;
+
+cursor:pointer;
+
+z-index:9999;
+
+}
+
+#wishlistCount{
+
+font-size:14px;
+
+}
+
+/*================ QUICK VIEW ================*/
+
+#quickView{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:rgba(0,0,0,.8);
+
+justify-content:center;
+
+align-items:center;
+
+z-index:99999;
+
+}
+
+.quick-box{
+
+background:#fff;
+
+color:#111;
+
+padding:30px;
+
+border-radius:15px;
+
+max-width:450px;
+
+width:90%;
+
+text-align:center;
+
+position:relative;
+
+}
+
+.quick-box img{
+
+width:100%;
+
+border-radius:10px;
+
+margin-bottom:20px;
+
+}
+
+#closeQuick{
+
+position:absolute;
+
+top:15px;
+
+right:20px;
+
+font-size:28px;
+
+cursor:pointer;
+
+}
+
+.rating{
+
+color:#ffb000;
+
+font-size:20px;
+
+margin-bottom:10px;
+
+}
+<script>
+
+/*================ SCROLL PROGRESS ================*/
+
+window.addEventListener("scroll",()=>{
+
+let total=document.documentElement.scrollHeight-window.innerHeight;
+
+let progress=(window.pageYOffset/total)*100;
+
+document.getElementById("progressBar").style.width=progress+"%";
+
+});
+
+/*================ WISHLIST ================*/
+
+let wishCount=0;
+
+const wishlist=document.getElementById("wishlist");
+
+document.getElementById("wishlistBtn").onclick=function(){
+
+wishlist.classList.add("active");
+
+}
+
+document.getElementById("closeWishlist").onclick=function(){
+
+wishlist.classList.remove("active");
+
+}
+
+document.querySelectorAll(".wishlist-add").forEach(btn=>{
+
+btn.onclick=function(){
+
+wishCount++;
+
+document.getElementById("wishlistCount").innerHTML=wishCount;
+
+let name=this.closest(".product-card").querySelector("h3").innerHTML;
+
+let li=document.createElement("li");
+
+li.innerHTML=name;
+
+document.getElementById("wishlistItems").appendChild(li);
+
+}
+
+});
+
+/*================ QUICK VIEW ================*/
+
+const popup=document.getElementById("quickView");
+
+document.querySelectorAll(".quick-btn").forEach(btn=>{
+
+btn.onclick=function(){
+
+let card=this.closest(".product-card");
+
+document.getElementById("quickImg").src=
+
+card.querySelector("img").src;
+
+document.getElementById("quickTitle").innerHTML=
+
+card.querySelector("h3").innerHTML;
+
+document.getElementById("quickDesc").innerHTML=
+
+card.querySelector("p").innerHTML;
+
+popup.style.display="flex";
+
+}
+
+});
+
+document.getElementById("closeQuick").onclick=function(){
+
+popup.style.display="none";
+
+}
+
+</script>
+<!-- ================= HERO SLIDER ================= -->
+
+<div class="hero-slider">
+
+<img src="images/slider1.jpg" class="slide active">
+
+<img src="images/slider2.jpg" class="slide">
+
+<img src="images/slider3.jpg" class="slide">
+
+<img src="images/slider4.jpg" class="slide">
+
+</div>
+<section class="stats-section">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-card glass">
+
+<h2 class="counter" data-target="100">0</h2>
+
+<p>Products</p>
+
+</div>
+
+<div class="stat-card glass">
+
+<h2 class="counter" data-target="500">0</h2>
+
+<p>Happy Customers</p>
+
+</div>
+
+<div class="stat-card glass">
+
+<h2>24×7</h2>
+
+<p>Support</p>
+
+</div>
+
+<div class="stat-card glass">
+
+<h2>India</h2>
+
+<p>Nationwide Supply</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+/*================ HERO SLIDER ================*/
+
+.hero-slider{
+
+position:relative;
+
+width:100%;
+
+height:500px;
+
+overflow:hidden;
+
+border-radius:20px;
+
+}
+
+.hero-slider img{
+
+position:absolute;
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+opacity:0;
+
+transition:1s;
+
+}
+
+.hero-slider img.active{
+
+opacity:1;
+
+}
+
+/*================ GLASS CARD ================*/
+
+.glass{
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,.12);
+
+box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.glass:hover{
+
+transform:translateY(-10px);
+
+}
+
+/*================ STATS ================*/
+
+.stats-section{
+
+padding:100px 0;
+
+background:#08101d;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.stat-card{
+
+padding:40px;
+
+text-align:center;
+
+border-radius:18px;
+
+}
+
+.stat-card h2{
+
+font-size:48px;
+
+color:#ffb000;
+
+margin-bottom:15px;
+
+}
+
+/*================ IMAGE EFFECT ================*/
+
+.product-card{
+
+overflow:hidden;
+
+}
+
+.product-card img{
+
+transition:.5s;
+
+}
+
+.product-card:hover img{
+
+transform:scale(1.12);
+
+}
+
+/*================ BUTTON EFFECT ================*/
+
+.primary-btn,
+
+.catalog-btn{
+
+transition:.4s;
+
+}
+
+.primary-btn:hover,
+
+.catalog-btn:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 25px rgba(255,176,0,.35);
+
+}
+<script>
+
+/*================ HERO AUTO SLIDER ================*/
+
+const slides=document.querySelectorAll(".slide");
+
+let currentSlide=0;
+
+function heroSlider(){
+
+slides.forEach(slide=>slide.classList.remove("active"));
+
+currentSlide++;
+
+if(currentSlide>=slides.length){
+
+currentSlide=0;
+
+}
+
+slides[currentSlide].classList.add("active");
+
+}
+
+setInterval(heroSlider,3000);
+
+/*================ NUMBER COUNTER ================*/
+
+const stats=document.querySelectorAll(".counter");
+
+stats.forEach(counter=>{
+
+const update=()=>{
+
+const target=+counter.dataset.target;
+
+const count=+counter.innerText;
+
+const speed=target/100;
+
+if(count<target){
+
+counter.innerText=Math.ceil(count+speed);
+
+setTimeout(update,20);
+
+}else{
+
+counter.innerText=target+"+";
+
+}
+
+};
+
+update();
+
+});
+
+</script>
+<!-- SEO -->
+<meta name="robots" content="index,follow">
+
+<meta name="author" content="SMSH MARKETPLACE">
+
+<meta name="theme-color" content="#08101d">
+
+<meta name="language" content="English">
+
+<meta name="revisit-after" content="7 days">
+
+<meta property="og:title" content="SMSH MARKETPLACE">
+
+<meta property="og:description"
+content="Trusted GeM Vendor | LED Lighting | Electrical Products">
+
+<meta property="og:image"
+content="images/banner.jpg">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:url"
+content="https://www.smshmarketplace.in">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<script type="application/ld+json">
+
+{
+
+"@context":"https://schema.org",
+
+"@type":"Organization",
+
+"name":"SMSH MARKETPLACE",
+
+"url":"https://www.smshmarketplace.in",
+
+"logo":"https://www.smshmarketplace.in/logo.png",
+
+"email":"smshmarketplace@gmail.com",
+
+"telephone":"+917217612989",
+
+"address":{
+
+"@type":"PostalAddress",
+
+"streetAddress":"A-476 Jawahar Mohalla",
+
+"addressLocality":"Patparganj",
+
+"addressRegion":"Delhi",
+
+"postalCode":"110091",
+
+"addressCountry":"IN"
+
+}
+
+}
+
+</script>
+{
+"name":"SMSH MARKETPLACE",
+"short_name":"SMSH",
+"start_url":"index.html",
+"display":"standalone",
+"background_color":"#08101d",
+"theme_color":"#ffb000",
+"icons":[
+
+{
+
+"src":"logo.png",
+
+"sizes":"512x512",
+
+"type":"image/png"
+
+}
+
+]
+
+}
+<link rel="manifest" href="manifest.json">
+const cacheName="smsh-v1";
+
+const files=[
+
+"/",
+
+"/index.html",
+
+"/style.css",
+
+"/script.js",
+
+"/logo.png"
+
+];
+
+self.addEventListener("install",e=>{
+
+e.waitUntil(
+
+caches.open(cacheName)
+
+.then(cache=>cache.addAll(files))
+
+);
+
+});
+
+self.addEventListener("fetch",e=>{
+
+e.respondWith(
+
+caches.match(e.request)
+
+.then(res=>res||fetch(e.request))
+
+);
+
+});
+
+<script>
+
+if("serviceWorker" in navigator){
+
+navigator.serviceWorker.register("service-worker.js");
+
+}
+
+</script>
+loading="lazy"
+
+<img
+src="images/led.jpg"
+loading="lazy">
+<link rel="icon"
+href="logo.png">
+html{
+
+scroll-behavior:smooth;
+
+}
+::selection{
+
+background:#ffb000;
+
+color:#111;
+
+}
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ffb000;
+
+border-radius:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#111;
+
+}
+img{
+
+max-width:100%;
+
+display:block;
+
+}
+<footer>
+
+<p>
+
+© 2026 SMSH MARKETPLACE
+
+All Rights Reserved.
+
+</p>
+
+</footer>
